@@ -29,3 +29,7 @@ Route::get('/services', 'App\Http\Controllers\PagesController@services');
 //     return 'This is '.$name.' having id '.$id;
 // });
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
