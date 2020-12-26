@@ -19,9 +19,32 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
+<!---
+
+    Create post controller
+    crate post model
+    edit schema field
+    edit string length
+    create db 
+    modify .env
+    add data through tinker
+    {
+        php artisan tinker
+        App\Models\Post::count()
+        $post = new App\Models\Post();
+        $post->title = "text";
+        $post->body = "text";
+
+    }
+
+
+
+    
+
+    --->
 <body>
     @include('inc.navbar')
-    <div class="container mt-5">
+    <div class="container">
         @yield('content')
     </div>
 </body>
