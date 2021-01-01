@@ -21,7 +21,7 @@
 </head>
 <!---
 
-    Create post controller
+    Create post controller with --resource
     crate post model
     edit schema field
     edit string length
@@ -34,8 +34,9 @@
         $post = new App\Models\Post();
         $post->title = "text";
         $post->body = "text";
-
     }
+
+    php artisan route:list
 
 
 
