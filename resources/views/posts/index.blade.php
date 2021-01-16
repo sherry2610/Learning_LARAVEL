@@ -9,7 +9,7 @@
           
           <div class="card card-body bg-light">
             <a href="/posts/{{$post->id}}"><h3>{{$post->title}}</h3></a>
-              <small>written on {{$post->created_at}}</small>
+              <small>written on {{$post->created_at}} by {{$post->user->name}}</small>
           </div>
       @endforeach
       <div>{{$posts->links()}}</div>
